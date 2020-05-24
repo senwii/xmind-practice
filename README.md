@@ -3,16 +3,18 @@
 > xmind前端面试题
 
 ## 截图
----
+![](https://raw.githubusercontent.com/senwii/xmind-practice/master/screenshot.png)
+​
+
+## 录屏
+[demo.mov](https://raw.githubusercontent.com/senwii/xmind-practice/master/demo.mov)
 ​
 
 ## 在线地址
----
 https://senwii.ink/app/xmind-practice-client/​
 
 ​
 ## 配置
----
 操作系统：CentOS v7.8.2003
 
 服务器：NodeJS v10.20.1
@@ -23,7 +25,6 @@ https://senwii.ink/app/xmind-practice-client/​
 
 ​
 ## 运行
----
 1. 设置Redis密码，启动服务，默认端口6379，无密码
 2. 启动NodeJs服务，端口：8085
 3. 运行本地前端项目，端口：8081
@@ -36,7 +37,6 @@ open -n /Applications/Google\ Chrome.app/ --args --disable-web-security  --user-
 
 ​
 ## 思路
----
 第一遍看完题目时，感觉这是一个虽然简单但是比较完整的账单应用；需要存取、新增、筛选、统计数据，（一个流程完整的应用应该还有删除账单功能）；另外一个账单自身具有时间属性，展示时按照产生时间先后排列，是一个比较自然地选择，就需要进行排序；这些涉及到数据库和后端接口提供服务；需要在界面操作，就涉及前端页面实现；因为之前没有过“跨端”的经验，对这么有趣的题目很感兴趣，正好拿来挑战下自己
 
 ### 技术选型
@@ -53,7 +53,6 @@ open -n /Applications/Google\ Chrome.app/ --args --disable-web-security  --user-
 
 ​
 ## 设计
----
 ### 数据库
 命名空间：xmind-practice
 
@@ -331,7 +330,6 @@ open -n /Applications/Google\ Chrome.app/ --args --disable-web-security  --user-
 
 
 ## Todo
----
 - 分页
 - 时区问题
 - 身份系统
@@ -339,7 +337,6 @@ open -n /Applications/Google\ Chrome.app/ --args --disable-web-security  --user-
 
 ​​
 ## 参考文档
----
 [Download Redis](https://redis.io/download)
 
 [Node-Redis document](https://github.com/NodeRedis/node-redis)
@@ -351,5 +348,3 @@ open -n /Applications/Google\ Chrome.app/ --args --disable-web-security  --user-
 [Koa](https://koa.bootcss.com/)
 
 [axois](https://www.npmjs.com/package/axios)
-
-[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/T-D1KVIuvjA)
