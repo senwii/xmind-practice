@@ -32,7 +32,7 @@ https://senwii.ink/app/xmind-practice-client/​
 
 ``` shell
 # 注：打开页面提示跨域问题，请在命令行中执行以下命令（禁用浏览器安全模式下打开Chrome浏览器）：
-open -n /Applications/Google\ Chrome.app/ --args --disable-web-security  --user-data-dir=/Users/shengwei/Desktop/MyChromeDevUserData
+open -n /Applications/Google\ Chrome.app/ --args --disable-web-security  --user-data-dir=~/Desktop/MyChromeDevUserData
 ```
 
 ​
