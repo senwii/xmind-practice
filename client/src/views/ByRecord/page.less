@@ -1,0 +1,126 @@
+.byrecord-page-root {
+    min-height: 100%;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+
+    .filter-line {
+        margin-bottom: 30px;
+
+        .MuiButtonBase-root {
+            height: 30px;
+            margin-left: 15px;
+            float: right;
+        }
+    }
+
+    .calc-line {
+        display: flex;
+        margin: 15px 0;
+        align-items: center;
+        justify-content: flex-end;
+        white-space: nowrap;
+
+        .calc-result {
+            margin: 0 3px;
+
+            .suffix {
+                display: inline-block;
+                font-size: 12px;
+                color: #c8c8c8;
+                font-weight: 300;
+                transform-origin: 50% 100%;
+                transform: scale(0.7);
+            }
+
+            .minus {
+                width: 7px;
+                display: inline-block;
+                margin-right: 5px;
+                background: no-repeat center right/contain;
+                background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTkwMDQzOTQ2MzM0IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjIwNTQiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNMCA0MTZsMCAxOTJjMCAxNy42NjQgMTQuMzM2IDMyIDMyIDMybDk2MCAwYzE3LjY2NCAwIDMyLTE0LjMzNiAzMi0zMmwwLTE5MmMwLTE3LjY2NC0xNC4zMzYtMzItMzItMzJMMzIgMzg0QzE0LjMzNiAzODQgMCAzOTguMzM2IDAgNDE2eiIgcC1pZD0iMjA1NSI+PC9wYXRoPjwvc3ZnPg==');
+            }
+
+            .equal {
+                width: 9px;
+                display: inline-block;
+                margin-right: 5px;
+                background: no-repeat center right/contain;
+                background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTkwMDQ0MTM2NDQyIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjI4MTQiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNODk2IDYwOEgxMjhjLTM1LjM0IDAtNjQgMjguNjYtNjQgNjR2NjRjMCAzNS4zNCAyOC42NiA2NCA2NCA2NGg3NjhjMzUuMzQgMCA2NC0yOC42NiA2NC02NHYtNjRjMC0zNS4zNC0yOC42Ni02NC02NC02NHogbTAtMzg0SDEyOGMtMzUuMzQgMC02NCAyOC42Ni02NCA2NHY2NGMwIDM1LjM0IDI4LjY2IDY0IDY0IDY0aDc2OGMzNS4zNCAwIDY0LTI4LjY2IDY0LTY0di02NGMwLTM1LjM0LTI4LjY2LTY0LTY0LTY0eiIgcC1pZD0iMjgxNSI+PC9wYXRoPjwvc3ZnPg==');
+            }
+
+            .money {
+                font-weight: 500;
+            }
+        }
+    }
+
+    .td-amount {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        line-height: 0;
+
+        .expend-icon {
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            background: no-repeat center/contain;
+            background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTg5OTczNDA0NTk5IiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjI2OTkiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNMTcwLjY2NjY2NyA1MTJhNDIuNjY2NjY3IDQyLjY2NjY2NyAwIDAgMSA0Mi42NjY2NjYtNDIuNjY2NjY3aDU5Ny4zMzMzMzRhNDIuNjY2NjY3IDQyLjY2NjY2NyAwIDEgMSAwIDg1LjMzMzMzNEgyMTMuMzMzMzMzYTQyLjY2NjY2NyA0Mi42NjY2NjcgMCAwIDEtNDIuNjY2NjY2LTQyLjY2NjY2N3oiIGZpbGw9IiNkODFlMDYiIHAtaWQ9IjI3MDAiPjwvcGF0aD48L3N2Zz4=');
+        }
+
+        .income-icon {
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            margin-right: -2px;
+            background: no-repeat center/contain;
+            background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBzdGFuZGFsb25lPSJubyI/PjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+PHN2ZyB0PSIxNTg5OTY3MjgyNjgxIiBjbGFzcz0iaWNvbiIgdmlld0JveD0iMCAwIDEwMjQgMTAyNCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHAtaWQ9IjE4NTQiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCI+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48L3N0eWxlPjwvZGVmcz48cGF0aCBkPSJNNTEyIDE3MC42NjY2NjdhNDIuNjY2NjY3IDQyLjY2NjY2NyAwIDAgMSA0Mi42NjY2NjcgNDIuNjY2NjY2djU5Ny4zMzMzMzRhNDIuNjY2NjY3IDQyLjY2NjY2NyAwIDEgMS04NS4zMzMzMzQgMFYyMTMuMzMzMzMzYTQyLjY2NjY2NyA0Mi42NjY2NjcgMCAwIDEgNDIuNjY2NjY3LTQyLjY2NjY2NnoiIGZpbGw9IiM3NUM4MkIiIHAtaWQ9IjE4NTUiPjwvcGF0aD48cGF0aCBkPSJNMTcwLjY2NjY2NyA1MTJhNDIuNjY2NjY3IDQyLjY2NjY2NyAwIDAgMSA0Mi42NjY2NjYtNDIuNjY2NjY3aDU5Ny4zMzMzMzRhNDIuNjY2NjY3IDQyLjY2NjY2NyAwIDEgMSAwIDg1LjMzMzMzNEgyMTMuMzMzMzMzYTQyLjY2NjY2NyA0Mi42NjY2NjcgMCAwIDEtNDIuNjY2NjY2LTQyLjY2NjY2N3oiIGZpbGw9IiM3NUM4MkIiIHAtaWQ9IjE4NTYiPjwvcGF0aD48L3N2Zz4=');
+        }
+    }
+
+    .paper-container {
+        display: flex;
+        flex: 1;
+        margin: 10px 45px;
+    }
+
+    .MuiPaper-root {
+        width: 80%;
+        min-width: 540px;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 15px 25px 35px;
+
+        table {
+            thead th {
+                background-color: #fff;
+            }
+            
+            td {
+                color: rgba(0, 0, 0, 0.87);
+            }
+        }
+
+        .table-empty {
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+            font-weight: 300;
+            color: #d5d5d5;
+            user-select: none;
+        }
+    }
+
+    .MuiFormControl-root {
+        min-width: 150px;
+        margin-right: 10px;
+    }
+}
+
+.del-bill-dialog {
+    .MuiDialogActions-root {
+        padding: 12px 20px;
+    }
+}

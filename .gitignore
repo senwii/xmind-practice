@@ -1,0 +1,7 @@
+node_modules
+dist
+yarn.lock
+.vscode
+.DS_Store
+yarn-error.log
+*.rdb

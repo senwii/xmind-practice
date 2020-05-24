@@ -1,0 +1,42 @@
+{
+  "name": "xmind-practice-server",
+  "version": "0.1.0",
+  "description": "xmind面试练习",
+  "main": "app.js",
+  "scripts": {
+    "serve": "pm2 start app.js --name xmind-practice-service",
+    "dev": "pm2 start app.js --name xmind-practice-service --watch",
+    "reload": "pm2 reload xmind-practice-service",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "^10.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senwii/xmind-practice.git"
+  },
+  "keywords": [
+    "xmind",
+    "job",
+    "practice"
+  ],
+  "author": "senwiis@gmail.com",
+  "license": "MPL v1.1",
+  "bugs": {
+    "url": "https://github.com/senwii/xmind-practice/issues"
+  },
+  "homepage": "https://github.com/senwii/xmind-practice#readme",
+  "dependencies": {
+    "@koa/router": "^8.0.8",
+    "chalk": "^4.0.0",
+    "csv-parse": "^4.9.0",
+    "ip": "^1.1.5",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-helmet": "^5.2.0",
+    "koa-toobusy": "^1.0.1",
+    "pm2": "^4.4.0",
+    "redis": "^3.0.2"
+  }
+}
