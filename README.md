@@ -166,6 +166,7 @@ open -n /Applications/Google\ Chrome.app/ --args --disable-web-security  --user-
 4. 并发竞态问题：假设同时发起多个添加账单请求，由于账单id是自增的，在并发生成id时存在竞态问题，导致id重复，通过Redis `setnx`、`getset`指令设置锁解决
 5. 反爬虫：账单属于敏感信息，且账单id自增，可能通过爬虫爬取到账单信息；解决：对账单id+随机数计算摘要，并与id一一映射（Hash），对外通过摘要充当账单id，真实的账单id不对外暴露
 6. 数值计算：使用BigInt进行运算，结果再转为浮点数，保留两位精度小数
+7. 优化加载速度：路由懒加载；nginx gzip；
 
 #### Restful api设计
 ```
