@@ -36,7 +36,7 @@
     "koa-bodyparser": "^4.3.0",
     "koa-helmet": "^5.2.0",
     "koa-toobusy": "^1.0.1",
-    "pm2": "^4.4.0",
+    "pm2": "^5.2.0",
     "redis": "^3.0.2"
   }
 }
